@@ -62,7 +62,7 @@ class GetShowVersion(Job):
         class OnboardVersion:
             def __init__(self, device):
                 self.device = device
-                self.supported_drivers = ["keymile_nos", "cisco_xr", "cisco_ios"]
+                self.supported_drivers = ["arista_eos", "keymile_nos", "cisco_xr", "cisco_ios"]
                 print_status("info", f"Currently supported platforms: {self.supported_drivers}")
 
                 self.platform = self.device.platform.network_driver
